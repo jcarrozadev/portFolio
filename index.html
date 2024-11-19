@@ -15,35 +15,72 @@
     <body>
         <header class="header">
             <div class="logo">
-                <img src="https://github.com/jcarrozadev.png" alt="Perfil Javier Arias Carroza" style="border-radius: 50%;">
+                <img src="./assets/img/logoDev.png" alt="Perfil Javier Arias Carroza" style="border-radius: 50%;">
             </div>
             <nav>
                <ul class="nav-links">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#sobremi">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
                </ul>            
             </nav>
-            <a class="btn" href="#"><button>Contact</button></a>
+            <!-- <a class="btn" href="#"><button>Contact</button></a> -->
             <button id="theme-toggle" class="btn-toggle"><i class="fa-regular fa-moon"></i></button>
 
         </header>
-        <section class="hero">
-            <h1 id="typewriter"></h1>
+        <section class="inicio">
+            
+            <div class="intro">
+                Hola, soy <span id="nombre">Javier</span>, Desarrollador Web.<br>
+            </div>
+        </section>
+        <section id="sobremi">
+            <h2>Sobre mi</h2>
+            <div class="sobremi-grid">
+                <div class="sobremi-item" id="sobremi-img">
+                    <img src="https://github.com/jcarrozadev.png" alt="Javier Arias Carroza" style="border-radius:50%;" width="40%">
+                </div>
+                <div class="sobremi-item" id="sobremi-text">
+                    ¡Hola! Soy Javier.
+                    Soy actual estudiante de <span class="textoDestacable">Desarrollo de Aplicaciones Web</span>.<br>
+                    Además, soy Técnico en <span class="textoDestacable">Sistemas MicroInformáticos y Redes</span>.<br>
+                    Me gusta programar, sobre todo la parte de <span class="textoDestacable">diseño Web y en general</span>. <br>Poner la cabeza pensante en la creatividad, es algo que me gusta mucho.
+                    <div class="social-icons">
+                        <a href="https://github.com/jcarrozadev" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://es.linkedin.com/in/javier-arias-carroza-0318582b4" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/jcarroza_27" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="projects">
             <h2>Mis Proyectos</h2>
             <div class="proyecto-grid">
                 <!-- Proyecto 1 -->
                 <div class="proyecto-item">
-                    <img src="./assets/img/proyecto1.jpg" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p></p>
+                    <img src="./assets/img/proyects/bdbizum.png" alt="Proyecto 1">
+                    <h3>BD Bizum</h3>
+                    <p>
+                        Esto es un proyecto final para 1DAW trabajando las bases de datos con MySQL y clases de Java.
+                    </p>
+                    <div class="lenguajesUsados">
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/appBank" target="_blank">Ver en GitHub</a></button>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="proyecto-item">
+                    <img src="./assets/img/proyects/bdbizum.png" alt="Proyecto 1">
+                    <h3>BD Bizum</h3>
+                    <p>
+                        Esto es un proyecto final para 1DAW trabajando las bases de datos con MySQL y clases de Java.
+                    </p>
                     <div class="lenguajesUsados">
                         <i class="fa-brands fa-js"></i>
                         <i class="fa-brands fa-html5"></i>
                         <i class="fa-brands fa-css3-alt"></i>
                     </div>
+                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/appBank" target="_blank">Ver en GitHub</a></button>
                 </div>
             </div>
         </section>

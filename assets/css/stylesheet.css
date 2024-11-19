@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background-light);
   color: var(--text-light);
@@ -22,10 +26,23 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.textoDestacable {
+  color: var(--primary-color);
+}
+
+#nombre {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 /* Nav */
 
 .header{
-  background-color: #1b3039;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #232323;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +55,8 @@ body {
 }
 
 .header .logo img{
-  height: 60px;
+  padding-top: 1%;
+  height: 40px;
   width: auto;
   transition: all 0.3s;
 }
@@ -123,12 +141,18 @@ body {
   text-align: left;
 }
 
+.proyecto-item > p {
+  margin-bottom: 1.5%;
+}
+
 /* EFECTO DE TYPING */
 .hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: var(--background-light);
-  color: var(--primary-color);
+  height: 90vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  background-color: #f0f0f0;
 }
 
 #typewriter {
@@ -137,8 +161,52 @@ body {
   color: var(--text-light);
 }
 
+#sobremi > .sobremi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.sobremi-item:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+#sobremi-img {
+  grid-area: 1 / 1 / 2 / 2; 
+}
+
+#sobremi-text {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 3%;
+  padding-top: 10%;
+  text-align: left;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons > a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons > a:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+}
+
 /* GRID DE PROYECTOS */
-#projects {
+#projects,
+#sobremi {
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -152,7 +220,7 @@ body {
 
 .proyecto-item {
   background: var(--text-dark);
-  color: var(--text-light);
+  color: #1c242c;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -175,11 +243,25 @@ body {
 
 .lenguajesUsados {
   color: #ffbc0e;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lenguajesUsados i {
+  color: var(--secondary-color);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.lenguajesUsados i:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
 }
 
 /* FOOTER */
 footer {
-  background-color: #333;
+  background-color: #232323;
   color: white;
   padding: 1.5rem 0;
   text-align: center;
@@ -206,4 +288,62 @@ footer .social-links a:hover {
 .dark-mode {
   --background-light: var(--background-dark);
   --text-light: #FFFFFF;
+}
+
+.inicio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, var(--background-dark), var(--background-light));
+  background-size: 300% 300%;
+  animation: gradientMove 6s infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.intro {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffffff;
+  animation: typing 5s steps(60, end) infinite, blink 0.2s step-end infinite alternate;
+}
+
+@keyframes typing {
+  0%, 10% { width: 0; }          /* Comienza vacío */
+  10%, 70% { width: 30ch; }     /* Escribe y mantiene el texto completo */
+  70%, 100% { width: 0; }       /* Desaparece suavemente */
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: #ffffff; }
+}
+
+.btn-gitHub {
+  margin-top: 2%;
+  width: 100%;
+  background-color: #1c242c;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-gitHub > a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.btn-gitHub:hover {
+  box-shadow: 0px 0px 5px #1c242c;
+  transform: scale(1.02);
+  transition: 0.5s;
 }
