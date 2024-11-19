@@ -347,3 +347,22 @@ footer .social-links a:hover {
   transform: scale(1.02);
   transition: 0.5s;
 }
+
+.cv-download {
+  margin-top: 20px;
+}
+
+.btn-download {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}
