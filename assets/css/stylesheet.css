@@ -1,0 +1,209 @@
+/* VARIABLES */
+:root {
+  --primary-color: #1E90FF;
+  --secondary-color: #FFD700;
+  --background-light: #d6d6d6;
+  --background-dark: #1c242c;
+  --text-light: #1c242c;
+  --text-dark: #FFFFFF;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Nav */
+
+.header{
+  background-color: #1b3039;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.header .logo{
+  cursor: pointer;
+}
+
+.header .logo img{
+  height: 60px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+
+.header .nav-links{
+  list-style: none;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+  transform: scale(1.1);
+}
+
+.header .nav-links a{
+  font-size: 700;
+  color: #eceff1;
+  text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+  color: #ffbc0e;
+}
+
+.header .btn button{
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+  background-color: #e2f1f8;
+  color: #ffbc0e;
+  transform: scale(1.1);
+}
+
+/* BOTÓN MODO OSCURO/CLARO */
+.btn-toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-toggle:hover {
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+}
+
+/* PROYECTOS */
+.proyecto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.proyecto-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* EFECTO DE TYPING */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--background-light);
+  color: var(--primary-color);
+}
+
+#typewriter {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+/* GRID DE PROYECTOS */
+#projects {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.proyecto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.proyecto-item {
+  background: var(--text-dark);
+  color: var(--text-light);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.proyecto-item img {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.proyecto-item h3 {
+  margin: 1rem 0;
+}
+
+.proyecto-item:hover {
+  transform: scale(1.05);
+}
+
+.lenguajesUsados {
+  color: #ffbc0e;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #FFD700;
+}
+
+.dark-mode {
+  --background-light: var(--background-dark);
+  --text-light: #FFFFFF;
+}
