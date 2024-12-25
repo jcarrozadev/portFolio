@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #60319e;
+    --secondary-color: #14171A;
+    --tertiary-color: #657786;
+    --quaternary-color: #AAB8C2;
+    --quinary-color: #E1E8ED;
+    --senary-color: #F5F8FA;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header-banner {
+    background: url('../video/banner.gif') no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.content-section {
+    display: none; /* Oculta todas las secciones por defecto */
+}
+  
+.content-section.active {
+    display: block; /* Muestra solo la sección activa */
+}
+  
+
+.profile-section {
+    text-align: center;
+    margin-top: -60px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.profile-name {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.profile-bio {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+}
+
+.social-link > i {
+    font-size: 1.2em;
+}
+
+.social-link > i:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.profile-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    box-shadow: 0 2px 0 var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.profile-description {
+    margin-top: 30px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 10px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    .profile-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
