@@ -126,12 +126,6 @@ body {
 }
 
 /* PROYECTOS */
-.proyecto-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
 
 .proyecto-item {
   background: white;
@@ -213,7 +207,7 @@ body {
 
 .proyecto-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding: 1.5rem 1rem;
 }
