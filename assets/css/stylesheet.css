@@ -339,6 +339,8 @@ footer .social-links a:hover {
 .btn-project:hover {
   transform: scale(1.1);
   background-position: 100% 0;
+  box-shadow: 0px 0px 5px #1c242c;
+  transition: all 0.5s;
 }
 
 .inicio {
@@ -429,6 +431,12 @@ footer .social-links a:hover {
 
 .btn-download:hover {
   background-color: #0056b3;
+}
+
+.card:hover {
+  cursor: default;
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 
 /* MEDIA QUERIES */
