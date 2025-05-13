@@ -1,33 +1,39 @@
-const typewriter = document.getElementById("typewriter");
-const nameToType = "Javier Arias Carroza"; 
-let index = 0;
-let isDeleting = false;
+document.addEventListener("DOMContentLoaded", () => {
+  const typewriter = document.getElementById("typewriter");
+  const phrases = [
+    "Full-Stack Developer",
+    "Desarrollador Frontend",
+    "Desarrollador Backend",
+    "Apasionado del diseño web"
+  ];
 
-function typeEffect() {
-  const delay = isDeleting ? 100 : 200; // Velocidad de borrado y escritura
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
 
-  if (!isDeleting && index < nameToType.length) {
-    // Escribiendo
-    typewriter.textContent = nameToType.slice(0, index + 1);
-    index++;
-  } else if (isDeleting && index > 0) {
-    // Borrando
-    typewriter.textContent = nameToType.slice(0, index - 1);
-    index--;
-  } else if (!isDeleting && index === nameToType.length) {
-    // Pausa antes de borrar
-    isDeleting = true;
-    setTimeout(typeEffect, 1000);
-    return;
-  } else if (isDeleting && index === 0) {
-    // Pausa antes de escribir nuevamente
-    isDeleting = false;
-    setTimeout(typeEffect, 500);
-    return;
+  function typeEffect() {
+    const currentPhrase = phrases[phraseIndex];
+    const currentText = currentPhrase.slice(0, charIndex);
+
+    typewriter.textContent = currentText;
+
+    if (!isDeleting && charIndex < currentPhrase.length) {
+      charIndex++;
+      setTimeout(typeEffect, 120);
+    } else if (isDeleting && charIndex > 0) {
+      charIndex--;
+      setTimeout(typeEffect, 60);
+    } else {
+      if (!isDeleting) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000);
+      } else {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        setTimeout(typeEffect, 500);
+      }
+    }
   }
 
-  setTimeout(typeEffect, delay);
-}
-
-// Inicia el efecto
-typeEffect();
+  typeEffect();
+});

@@ -1,165 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Javier Arias Carroza jariascarroza@gmail.com">
-        <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
-        <title>Javier Arias Carroza | Portfolio</title>
-        <!-- IMPORT -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-        <!-- CSS -->
-        <link rel="stylesheet" href="./assets/css/import.css">
-        <link rel="stylesheet" href="./assets/css/stylesheet.css">
-        <link rel="stylesheet" href="./assets/css/mediaquery.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <img src="./assets/img/logoDev.png" alt="Perfil Javier Arias Carroza" style="border-radius: 50%;">
-            </div>
-            <nav>
-               <ul class="nav-links">
-                    <li><a href="#sobremi">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-               </ul>            
-            </nav>
-            <!-- <a class="btn" href="#"><button>Contact</button></a> -->
-            <button id="theme-toggle" class="btn-toggle"><i class="fa-regular fa-moon"></i></button>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javier Arias Carroza | Portfolio</title>
+  <meta name="author" content="Javier Arias Carroza jariascarroza@gmail.com">
 
-        </header>
-        <section class="inicio">
-            
-            <div class="intro">
-                Hola, soy <span id="nombre">Javier</span>, Desarrollador Web.<br>
-            </div>
-        </section>
-        <section id="sobremi">
-            <h2>Sobre mi</h2>
-            <div class="sobremi-grid">
-                <div class="sobremi-item" id="sobremi-img">
-                    <img src="https://github.com/jcarrozadev.png" alt="Javier Arias Carroza" style="border-radius:50%;" width="40%">
-                </div>
-                <div class="sobremi-item" id="sobremi-text">
-                    ¡Hola! Soy Javier.
-                    Soy actual estudiante de <span class="textoDestacable">Desarrollo de Aplicaciones Web</span>.<br>
-                    Además, soy Técnico en <span class="textoDestacable">Sistemas MicroInformáticos y Redes</span>.<br>
-                    Me gusta programar, sobre todo la parte de <span class="textoDestacable">diseño Web y en general</span>. <br>Poner la cabeza pensante en la creatividad, es algo que me gusta mucho.
-                    <div class="social-icons">
-                        <a href="https://github.com/jcarrozadev" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://es.linkedin.com/in/javier-arias-carroza-0318582b4" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/jcarroza_27" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <!-- <div class="cv-download"></div>
-                        <a href="./assets/cv/CV_JavierAriasCarroza.pdf" download="CV_JavierAriasCarroza.pdf">
-                            <button class="btn-download">Descargar CV</button>
-                        </a>
-                    </div> -->
+  <!-- ESTILOS PRINCIPALES -->
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
 
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS ANIMATIONS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="text-white m-0 fs-4">Javier Arias Carroza</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="inicio">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Hola, soy Javier</h1>
+      <p class="lead mb-4">
+        <span id="typewriter"></span>
+      </p>
+      <a href="#projects" class="btn-project mt-4">Ver proyectos</a>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobremi" class="bg-light py-5">
+    <div class="container" data-aos="fade-right">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="https://github.com/jcarrozadev.png" alt="Foto Javier" class="img-fluid rounded-circle mb-3" width="200">
+        </div>
+        <div class="col-md-8">
+          <h2 class="mb-3">Sobre mí</h2>
+          <p>Soy estudiante de Desarrollo de Aplicaciones Web y Técnico en Sistemas Microinformáticos y Redes. Apasionado por el diseño web, la programación y el desarrollo creativo de interfaces.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="https://github.com/jcarrozadev" class="text-dark fs-4" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/javier-arias-carroza-0318582b4" class="text-dark fs-4" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:jariascarroza@gmail.com" class="text-dark fs-4"><i class="fas fa-envelope"></i></a>
+          </div>
+            <a href="./assets/cv/CV_JavierAriasCarroza.pdf" target="_blank" class="btn-project" download="Javier_Arias_Carroza_CV.pdf">Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="projects" class="text-center py-5">
+    <h2 class="mb-5" data-aos="fade-up">Mis Proyectos</h2>
+    <div class="container">
+      <div class="row g-4">
+
+            <!-- Gestor de Guardias -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="card h-100 shadow-sm d-flex flex-column position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                <span class="badge rounded-pill bg-warning text-dark px-3 py-2 small shadow-sm">En desarrollo</span>
                 </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Mis Proyectos</h2>
-            <div class="proyecto-grid">
-                <!-- Proyecto Reciente -->
-                <div class="proyecto-item">
-                    <img src="./assets/img/proyects/decisionesdevida.png" alt="Proyecto 2" height="500px">
-                    <h3>Decisiones de Vida</h3>
-                    <p>
-                        Este es mi proyecto más reciente. Es un minijuego de decisiones de vida, inspirado en la Justicia Social. 2ºDAW.
-                    </p>
-                    <div class="lenguajesUsados">
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-solid fa-database"></i>
-                        <i class="fa-brands fa-php"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
+                <img src="./assets/img/proyects/guardsevg.jpg" class="card-img-top" alt="Gestor de Guardias" style="object-fit: cover; height: 200px;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Gestor de Guardias</h5>
+                <p class="card-text">Aplicación para la gestión de guardias en la escuela. Incluye panel de administración y de profesorado.</p>
+                <div class="mt-auto">
+                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
+                    <i class="fab fa-js" style="color:#f7df1e"></i>
+                    <i class="fas fa-database" style="color:#f29111"></i>
+                    <i class="fab fa-php" style="color:#8892be"></i>
+                    <i class="fab fa-html5" style="color:#e34f26"></i>
+                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
                     </div>
-                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/decisionesdevida" target="_blank">Ver en GitHub</a></button>
-                    <button class="btn-gitHub"><a href="https://24.2daw.esvirgua.com/" target="_blank">Jugar</a></button>
+                    <small class="text-muted d-block mb-2">Marzo 2025 -</small>
+                    <a href="https://github.com/jcarrozadev/tfc_evg" class="btn btn-dark w-100" target="_blank">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
                 </div>
-                <!-- Proyecto 1 -->
-                <div class="proyecto-item">
-                    <img src="./assets/img/proyects/bdbizum.png" alt="Proyecto 1" height="500px">
-                    <h3>BD Bizum</h3>
-                    <p>
-                        Esto es un proyecto final para 1DAW trabajando las bases de datos con MySQL y clases de Java.
-                    </p>
-                    <div class="lenguajesUsados">
-                        <i class="fa-brands fa-java"></i>
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/appBank" target="_blank">Ver en GitHub</a></button>
-                </div>
-                <!-- Proyecto 2 -->
-                <div class="proyecto-item">
-                    <img src="./assets/img/proyects/webdisciplinar.png" alt="Proyecto 2" height="500px">
-                    <h3>Web Disciplinar</h3>
-                    <p>
-                        Esto es un proyecto de ABP conjunta con el ciclo de Desarrollo de Aplicaciones Web de Alumnos del San José, Málaga.
-                    </p>
-                    <div class="lenguajesUsados">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/WebMultidisciplinar" target="_blank">Ver en GitHub</a></button>
-                </div>
-                <!-- Proyecto 3 -->
-                <div class="proyecto-item">
-                    <img src="./assets/img/proyects/webAppLibros.png" alt="Proyecto 3" height="500px">
-                    <h3>App Libros EVG</h3>
-                    <p>
-                        MiniProyecto que consiste en crear una App de Reserva de Libros, para los alumnos reservar y administración gestionar, de manera online.
-                    </p>
-                    <div class="lenguajesUsados">
-                        <i class="fa-brands fa-php"></i>
-                        <i class="fa-solid fa-database"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/webLibrosApp" target="_blank">Ver en GitHub</a></button>
-                </div>
-                <!-- Proyecto 4 -->
-                <div class="proyecto-item">
-                    <img src="./assets/img/proyects/tresenraya.png" alt="Proyecto 4" height="500px">
-                    <h3>Tres en Raya</h3>
-                    <p>
-                        Proyecto de 1ºDAW, consiste en un juego de Tres en Raya, con la posibilidad de jugar contra la máquina.
-                    </p>
-                    <div class="lenguajesUsados">
-                        <i class="fa-brands fa-java"></i>
-                    </div>
-                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/tresEnRaya" target="_blank">Ver en GitHub</a></button>
-                </div>
-                <!-- Proyecto 5 -->
-                <div class="proyecto-item">
-                    <img src="./assets/img/proyects/desastresnaturales.png" alt="Proyecto 5" height="500px">
-                    <h3>Desastres Naturales</h3>
-                    <p>
-                        Proyecto para repasar conocimientos de HTML y CSS.
-                    </p>
-                    <div class="lenguajesUsados">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <button class="btn-gitHub"><a href="https://github.com/jcarrozadev/desastresNaturales" target="_blank">Ver en GitHub</a></button>
                 </div>
             </div>
-        </section>
-                
+            </div>
 
-        <!-- FOOTER -->
-        <footer>
-            <p>&copy; 2024 Javier Arias Carroza. Todos los derechos reservados.</p>
-            <ul class="social-links">
-                <li><a href="https://github.com/jcarrozadev" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="https://es.linkedin.com/in/javier-arias-carroza-0318582b4" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="mailto:jariascarroza@gmail.com"><i class="fas fa-envelope"></i> Gmail</a></li>
-            </ul>
-        </footer>        
+            <!-- Decisiones de Vida -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="card h-100 shadow-sm d-flex flex-column">
+                <img src="./assets/img/proyects/decisionesdevida.png" class="card-img-top" alt="Decisiones de Vida" style="object-fit: cover; height: 200px;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Decisiones de Vida</h5>
+                <p class="card-text">Minijuego de decisiones de vida, inspirado en la Justicia Social. 2ºDAW.</p>
+                <div class="mt-auto">
+                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
+                    <i class="fab fa-js" style="color:#f7df1e"></i>
+                    <i class="fas fa-database" style="color:#f29111"></i>
+                    <i class="fab fa-php" style="color:#8892be"></i>
+                    <i class="fab fa-html5" style="color:#e34f26"></i>
+                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
+                    </div>
+                    <small class="text-muted d-block mb-2">Mayo 2024</small>
+                    <a href="https://github.com/jcarrozadev/decisionesdevida" class="btn btn-dark w-100" target="_blank">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
 
-        <!-- JS -->
-        <script src="./assets/js/script.js"></script>
-    </body>
+            <!-- BD Bizum -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="card h-100 shadow-sm d-flex flex-column">
+                <img src="./assets/img/proyects/bdbizum.png" class="card-img-top" alt="BD Bizum" style="object-fit: cover; height: 200px;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">BD Bizum</h5>
+                <p class="card-text">Proyecto de MySQL y clases Java como aplicación de pagos entre usuarios. Final de 1ºDAW.</p>
+                <div class="mt-auto">
+                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
+                    <i class="fab fa-java" style="color:#f89820"></i>
+                    <i class="fas fa-database" style="color:#f29111"></i>
+                    </div>
+                    <small class="text-muted d-block mb-2">Marzo – Junio 2023</small>
+                    <a href="https://github.com/jcarrozadev/appBank" class="btn btn-dark w-100" target="_blank">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Web Disciplinar -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="card h-100 shadow-sm d-flex flex-column">
+                <img src="./assets/img/proyects/webdisciplinar.png" class="card-img-top" alt="Web Disciplinar" style="object-fit: cover; height: 200px;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Web Disciplinar</h5>
+                <p class="card-text">Web colaborativa con el alumnado de San José (Málaga), centrada en el trabajo transversal de distintas asignaturas.</p>
+                <div class="mt-auto">
+                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
+                    <i class="fab fa-html5" style="color:#e34f26"></i>
+                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
+                    </div>
+                    <small class="text-muted d-block mb-2">Noviembre – Diciembre 2023</small>
+                    <a href="https://github.com/jcarrozadev/WebMultidisciplinar" class="btn btn-dark w-100" target="_blank">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- App Libros EVG -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="card h-100 shadow-sm d-flex flex-column">
+                <img src="./assets/img/proyects/webAppLibros.png" class="card-img-top" alt="App Libros EVG" style="object-fit: cover; height: 200px;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">App Libros EVG</h5>
+                <p class="card-text">Aplicación para la reserva de libros por parte del alumnado y su gestión por administración.</p>
+                <div class="mt-auto">
+                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
+                    <i class="fab fa-php" style="color:#8892be"></i>
+                    <i class="fas fa-database" style="color:#f29111"></i>
+                    <i class="fab fa-html5" style="color:#e34f26"></i>
+                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
+                    </div>
+                    <small class="text-muted d-block mb-2">Enero – Febrero 2024</small>
+                    <a href="https://github.com/jcarrozadev/webLibrosApp" class="btn btn-dark w-100" target="_blank">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Tres en Raya -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="card h-100 shadow-sm d-flex flex-column">
+                <img src="./assets/img/proyects/tresenraya.png" class="card-img-top" alt="Tres en Raya" style="object-fit: cover; height: 200px;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tres en Raya</h5>
+                <p class="card-text">Juego clásico desarrollado en Java con lógica de IA simple para jugar contra la máquina.</p>
+                <div class="mt-auto">
+                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
+                    <i class="fab fa-java" style="color:#f89820"></i>
+                    </div>
+                    <small class="text-muted d-block mb-2">Abril 2023</small>
+                    <a href="https://github.com/jcarrozadev/tresEnRaya" class="btn btn-dark w-100" target="_blank">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Desastres Naturales -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
+            <div class="card h-100 shadow-sm d-flex flex-column">
+                <img src="./assets/img/proyects/desastresnaturales.png" class="card-img-top" alt="Desastres Naturales" style="object-fit: cover; height: 200px;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Desastres Naturales</h5>
+                <p class="card-text">Página HTML y CSS como repaso de maquetación para practicar diseño limpio y responsive.</p>
+                <div class="mt-auto">
+                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
+                    <i class="fab fa-html5" style="color:#e34f26"></i>
+                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
+                    </div>
+                    <small class="text-muted d-block mb-2">Octubre 2022</small>
+                    <a href="https://github.com/jcarrozadev/desastresNaturales" class="btn btn-dark w-100" target="_blank">
+                    <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="mb-2">&copy; 2024 Javier Arias Carroza. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="https://github.com/jcarrozadev" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/javier-arias-carroza-0318582b4" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:jariascarroza@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="assets/js/texto.js"></script>
+</body>
 </html>
