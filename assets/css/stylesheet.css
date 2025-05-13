@@ -430,3 +430,11 @@ footer .social-links a:hover {
 .btn-download:hover {
   background-color: #0056b3;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
