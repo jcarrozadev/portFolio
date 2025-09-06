@@ -221,7 +221,8 @@ header {
   gap: 0.5rem;
 }
 
-i:hover {
+i:hover,
+.icon:hover {
   transform: scale(1.2);
   transition: all 0.3s;
 }
