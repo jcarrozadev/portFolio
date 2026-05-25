@@ -1,343 +1,660 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Javier Arias Carroza | Portfolio</title>
-  <meta name="author" content="Javier Arias Carroza jariascarroza@gmail.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ESTILOS PRINCIPALES -->
-  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <title>Javier Arias Carroza | Desarrollador Web</title>
+  <meta name="author" content="Javier Arias Carroza" />
+  <meta name="description" content="Portfolio profesional de Javier Arias Carroza, desarrollador web fullstack junior especializado en Laravel, PHP, JavaScript y aplicaciones web internas." />
 
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon" />
 
-  <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- FONT AWESOME -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
-  <!-- AOS ANIMATIONS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 id="text-header" class="text-white m-0 fs-4">Javier Arias Carroza</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#sobremi">Sobre mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="container header-wrapper">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark"><img src="https://github.com/jcarrozadev.png" alt="Foto de Javier Arias Carroza"></span>
+        <span>Javier Arias Carroza</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#daily-work">Mi día a día</a>
+        <a href="#signature">Sello</a>
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#formacion">Formación</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero-section" id="inicio">
-    <div class="container" data-aos="fade-up">
-      <h1 class="display-4 fw-bold">Hola, soy Javier</h1>
-      <p class="lead mb-4">
-        <span id="typewriter"></span>
-      </p>
-      <a href="#projects" class="btn-project mt-4">Ver proyectos</a>
-    </div>
-  </section>
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content" data-aos="fade-up">
+            <span class="eyebrow">
+              Disponible para empleo inmediato
+            </span>
 
-  <!-- SOBRE MI -->
-  <section id="sobremi" class="bg-light py-5">
-    <div class="container" data-aos="fade-right">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center">
-          <img src="https://github.com/jcarrozadev.png" alt="Foto Javier" class="img-fluid rounded-circle mb-3" width="200">
-        </div>
-        <div class="col-md-8">
-          <h2 class="mb-3">Sobre mí</h2>
-          <p id="text-sobremi" class="mb-3">
-            Desarrollador web <strong>Fullstack</strong> en formación en la Escuela Virgen de Guadalupe. 
-            <br>Apasionado por código limpio, Frontend y Frameworks como <strong>Laravel</strong>.
-            <br>Desarrollador en prácticas en <strong>THB Hotels</strong> desde enero de 2025.
-          </p>
-            <div class="d-flex justify-content-center gap-3 mt-3"></div>
-              <a href="https://github.com/jcarrozadev" class="text-dark fs-4" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://linkedin.com/in/javier-arias-carroza-0318582b4" class="text-dark fs-4" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:jariascarroza@gmail.com" class="text-dark fs-4"><i class="fas fa-envelope"></i></a>
-              <div class="mt-4">
-                  <a href="./assets/cv/CV_JavierAriasCarroza.pdf" target="_blank" class="btn-project" download="Javier_Arias_Carroza_CV.pdf">Descargar CV</a>
+            <h1>
+              Javier Arias Carroza
+              <span>Desarrollador Web Fullstack Junior</span>
+            </h1>
+
+            <p class="hero-description">
+              Desarrollo aplicaciones web claras, funcionales y mantenibles. Me centro en crear soluciones internas,
+              interfaces cuidadas y sistemas que realmente ayuden a trabajar mejor.
+            </p>
+
+            <div class="hero-tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+              <span>HTML/CSS</span>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <strong>+3</strong>
+                    <span>Años programando proyectos propios</span>
+                </div>
+
+                <div class="stat-item">
+                    <strong>+20</strong>
+                    <span>Sistemas desarrollados</span>
+                </div>
+
+                <div class="stat-item">
+                    <strong>Fullstack</strong>
+                    <span>+ lógica multiplayer</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn-main">
+                Ver proyectos
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a href="./assets/cv/Curriculum_2026_JavierAriasCarroza.pdf" target="_blank" download="Javier_Arias_Carroza_CV.pdf" class="btn-ghost">
+                Descargar CV
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-card" data-aos="fade-left">
+            <div class="profile-img">
+              <img src="https://github.com/jcarrozadev.png" alt="Foto de Javier Arias Carroza">
+            </div>
+
+            <h2>Desarrollando soluciones reales</h2>
+
+            <p>
+              Trabajo diariamente en proyectos propios, aplicaciones web
+              y sistemas interactivos donde aplico frontend, backend,
+              bases de datos, arquitectura modular y lógica cliente-servidor.
+            </p>
+
+            <div class="status-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <span>Aplicaciones web internas</span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Frontend + Backend</span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Trabajando en mis propios proyectos</span>
               </div>
             </div>
+          </aside>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROYECTOS -->
-  <section id="projects" class="text-center py-5">
-    <h2 class="mb-5" data-aos="fade-up">Mis Proyectos</h2>
-    <div class="container">
-      <div class="row g-4">
-            <!-- Script Aliados_items -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column position-relative">
-                <div class="position-absolute top-0 end-0 m-2">
-                <span class="badge rounded-pill bg-info text-white px-3 py-2 small shadow-sm">Recurso</span>
-                </div>
-                <img src="./assets/img/proyects/aliados_items.png" class="card-img-top" alt="Gestor de Guardias" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">aliados_items</h5>
-                <p class="card-text">Script administrativo para FiveM, permite el filtrado y mostrado de items dentro de tu propio servidor.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                      <i class="fab fa-js" style="color:#f7df1e"></i>
-                      <i class="fab fa-html5" style="color:#e34f26"></i>
-                      <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                      <!-- <i class="fab fa-lua" style="color:#00008B"></i> -->
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua" title="Lua" style="width: 1em; height: 1em; vertical-align: middle;" class="icon">
-                    </div>
-                    <small class="text-muted d-block mb-2">ago. 2025 - ago.2025</small>
-                    <a href="https://github.com/jcarrozadev/aliados_items" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+    <section id="daily-work" class="section section-soft">
+      <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+              <span>Mi día a día</span>
+              <h2>Lo que desarrollo actualmente.</h2>
+          </div>
 
-            <!-- Gestor de Guardias -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column position-relative">
-                <div class="position-absolute top-0 end-0 m-2">
-                <!-- <span class="badge rounded-pill bg-warning text-dark px-3 py-2 small shadow-sm">En desarrollo</span> -->
-                </div>
-                <img src="./assets/img/proyects/guardsevg.jpg" class="card-img-top" alt="Gestor de Guardias" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Gestor de Guardias</h5>
-                <p class="card-text">Aplicación para la gestión de guardias en la escuela. Incluye panel de administración y de profesorado.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                      <i class="fab fa-js" style="color:#f7df1e"></i>
-                      <i class="fas fa-database" style="color:#f29111"></i>
-                      <i class="fab fa-php" style="color:#8892be"></i>
-                      <i class="fab fa-html5" style="color:#e34f26"></i>
-                      <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                      <i class="fab fa-laravel" style="color:#ff2d20"></i>
-                    </div>
-                    <small class="text-muted d-block mb-2">mar. 2025 - jun.2025</small>
-                    <a href="https://github.com/jcarrozadev/tfc_evg" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+          <div class="daily-grid">
 
-            <!-- Concesionario de coches -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/concesionario.png" class="card-img-top" alt="Imagen de web concesionario" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Concesionario de Coches</h5>
-                <p class="card-text">Proyecto realizado en formación DUAL con THB Hotels.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                      <i class="fab fa-js" style="color:#f7df1e"></i>
-                      <i class="fas fa-database" style="color:#f29111"></i>
-                      <i class="fab fa-php" style="color:#8892be"></i>
-                      <i class="fab fa-html5" style="color:#e34f26"></i>
-                      <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                      <i class="fab fa-laravel" style="color:#ff2d20"></i>
+                <article class="daily-card" data-aos="fade-up">
+                    <div class="daily-icon">
+                        <i class="fa-solid fa-code"></i>
                     </div>
-                    <small class="text-muted d-block mb-2">feb. 2025 - mar. 2025</small>
-                    <a href="https://github.com/jcarrozadev/concesionarioCoches" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
 
-            <!-- Gestor de tareas -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/taskManager.png" class="card-img-top" alt="Imagen de web concesionario" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Gestor de Tareas</h5>
-                <p class="card-text">Proyecto realizado en formación DUAL con THB Hotels. (Privado)</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                      <i class="fab fa-js" style="color:#f7df1e"></i>
-                      <i class="fas fa-database" style="color:#f29111"></i>
-                      <i class="fab fa-php" style="color:#8892be"></i>
-                      <i class="fab fa-html5" style="color:#e34f26"></i>
-                      <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                      <i class="fab fa-laravel" style="color:#ff2d20"></i>
+                    <h3>Desarrollo Fullstack</h3>
+
+                    <p>
+                        Desarrollo aplicaciones internas, paneles administrativos,
+                        interfaces web y sistemas completos utilizando Laravel,
+                        PHP, JavaScript y MySQL.
+                    </p>
+                </article>
+
+                <article class="daily-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="daily-icon">
+                        <i class="fa-solid fa-server"></i>
                     </div>
-                    <small class="text-muted d-block mb-2">feb. 2025 - mar. 2025</small>
-                    <a href="https://github.com/jcarrozadev/" class="btn btn-dark w-100 disabled" target="_blank" aria-disabled="true">
-                      <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
+
+                    <h3>Sistemas Multiplayer</h3>
+
+                    <p>
+                        Desarrollo recursos y sistemas interactivos cliente-servidor
+                        para entornos multiplayer en tiempo real, trabajando con
+                        sincronización, eventos, UI, bases de datos y arquitectura modular.
+                    </p>
+                </article>
+
+                <article class="daily-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="daily-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <h3>Tecnologías diarias</h3>
+
+                    <div class="daily-tags">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Lua</span>
+                        <span>React</span>
+                        <span>MySQL</span>
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                    </div>
+                </article>
+
             </div>
+        </div>
+    </section>
+
+    <section id="signature" class="section signature-section">
+        <div class="container">
+
+            <div class="signature-box" data-aos="fade-up">
+
+                <div class="signature-left">
+                    <span>Mi sello de desarrollo</span>
+
+                    <h2>Una identidad visual y técnica propia.</h2>
+
+                    <p>
+                        Gran parte de los sistemas e interfaces que desarrollo
+                        siguen una identidad propia bajo el concepto
+                        <strong>“Aliados”</strong>, un enfoque personal donde
+                        priorizo experiencia visual, consistencia, usabilidad
+                        y sensación premium.
+                    </p>
+
+                    <p>
+                        Desde herramientas administrativas hasta sistemas
+                        interactivos complejos, mantengo una línea de diseño
+                        reconocible, arquitectura modular y atención al detalle.
+                    </p>
+                </div>
+
+                <div class="signature-right">
+
+                    <div class="signature-card">
+                        <strong>Aliados</strong>
+                        <span>Diseño consistente</span>
+                    </div>
+
+                    <div class="signature-card">
+                        <strong>Interfaces Premium</strong>
+                        <span>UI limpia y cuidada</span>
+                    </div>
+
+                    <div class="signature-card">
+                        <strong>Arquitectura Modular</strong>
+                        <span>Sistemas escalables</span>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- Decisiones de Vida -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/decisionesdevida.png" class="card-img-top" alt="Decisiones de Vida" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Decisiones de Vida</h5>
-                <p class="card-text">Minijuego de decisiones de vida, inspirado en la Justicia Social. 2ºDAW.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                    <i class="fab fa-js" style="color:#f7df1e"></i>
-                    <i class="fas fa-database" style="color:#f29111"></i>
-                    <i class="fab fa-php" style="color:#8892be"></i>
-                    <i class="fab fa-html5" style="color:#e34f26"></i>
-                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                    </div>
-                    <small class="text-muted d-block mb-2">nov. 2024 - ene. 2025</small>
-                    <a href="https://github.com/jcarrozadev/decisionesdevida" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+        </div>
+    </section>
 
-            <!-- Gestión de libros -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/webAppLibros.png" class="card-img-top" alt="App Libros EVG" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Gestión de Libros</h5>
-                <p class="card-text">Un proyecto de la Escuela Virgen de Guadalupe para su gestión de libros y materiales educativos de los cursos.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                    <i class="fab fa-php" style="color:#8892be"></i>
-                    <i class="fas fa-database" style="color:#f29111"></i>
-                    <i class="fab fa-html5" style="color:#e34f26"></i>
-                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                    </div>
-                    <small class="text-muted d-block mb-2">oct. 2024 - nov. 2024</small>
-                    <a href="https://github.com/jcarrozadev/webLibrosApp" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+    <section id="sobremi" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span>Sobre mí</span>
+          <h2>Un desarrollador centrado en crear soluciones útiles.</h2>
+        </div>
 
-            <!-- BD Bizum -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/bdbizum.png" class="card-img-top" alt="BD Bizum" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">BD Bizum</h5>
-                <p class="card-text">Proyecto de MySQL y clases Java como aplicación simulación de pagos entre usuarios. </p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                    <i class="fab fa-java" style="color:#f89820"></i>
-                    <i class="fas fa-database" style="color:#f29111"></i>
-                    </div>
-                    <small class="text-muted d-block mb-2">may. 2024 - jun. 2024</small>
-                    <a href="https://github.com/jcarrozadev/appBank" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+        <div class="about-grid">
+          <div class="about-text" data-aos="fade-right">
+            <p>
+              Soy desarrollador web fullstack junior, formado en el sector de Desarrollo de Aplicaciones Web. Me interesa tanto
+              la parte visual de una aplicación como su lógica interna: estructura, base de datos, controladores,
+              validaciones, experiencia de usuario y mantenimiento del código.
+            </p>
 
-            <!-- Desastres Naturales -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/desastresnaturales.png" class="card-img-top" alt="Desastres Naturales" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Desastres Naturales</h5>
-                <p class="card-text">Página HTML y CSS como repaso de maquetación para practicar diseño limpio y responsive.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                    <i class="fab fa-html5" style="color:#e34f26"></i>
-                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                    </div>
-                    <small class="text-muted d-block mb-2">sep. 2024 - sep. 2024</small>
-                    <a href="https://github.com/jcarrozadev/desastresNaturales" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+            <p>
+              Me gusta trabajar en proyectos que tengan una utilidad real. He desarrollado herramientas de gestión,
+              paneles administrativos, aplicaciones internas y recursos personalizados, cuidando que cada pantalla
+              sea clara, ordenada y fácil de usar.
+            </p>
 
-            <!-- Web Disciplinar -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/webdisciplinar.png" class="card-img-top" alt="Web Disciplinar" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Web Disciplinar</h5>
-                <p class="card-text">Web colaborativa con el alumnado de San José (Málaga), centrada en el trabajo transversal de distintas asignaturas.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                    <i class="fab fa-html5" style="color:#e34f26"></i>
-                    <i class="fab fa-css3-alt" style="color:#1572b6"></i>
-                    </div>
-                    <small class="text-muted d-block mb-2">dic. 2023 - ene. 2024</small>
-                    <a href="https://github.com/jcarrozadev/WebMultidisciplinar" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+            <p>
+              Actualmente estoy enfocado en seguir creciendo profesionalmente, reforzar mi stack con Laravel, PHP,
+              JavaScript y MySQL, y encontrar una oportunidad donde aportar, aprender y formar parte de un equipo.
+            </p>
+          </div>
 
-            <!-- Tres en Raya -->
-            <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
-            <div class="card h-100 shadow-sm d-flex flex-column">
-                <img src="./assets/img/proyects/tresenraya.png" class="card-img-top" alt="Tres en Raya" style="object-fit: cover; height: 200px;">
-                <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Tres en Raya</h5>
-                <p class="card-text">Juego clásico desarrollado en Java con lógica de IA simple para jugar contra la máquina.</p>
-                <div class="mt-auto">
-                    <div class="d-flex justify-content-center gap-2 fs-5 mb-2">
-                    <i class="fab fa-java" style="color:#f89820"></i>
-                    </div>
-                    <small class="text-muted d-block mb-2">dic. 2023 - dic. 2023</small>
-                    <a href="https://github.com/jcarrozadev/tresEnRaya" class="btn btn-dark w-100" target="_blank">
-                    <i class="fab fa-github"></i> Ver en GitHub
-                    </a>
-                </div>
-                </div>
-            </div>
-            </div>
+          <div class="about-panel" data-aos="fade-left">
+            <h3>Ahora mismo estoy trabajando en:</h3>
+
+            <ul>
+              <li>Mejorar mi portfolio profesional.</li>
+              <li>Preparar proyectos para GitHub y LinkedIn.</li>
+              <li>Crear aplicaciones web internas con Laravel.</li>
+              <li>Reforzar buenas prácticas de código limpio.</li>
+              <li>Buscar oportunidades como desarrollador web junior.</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p class="mb-2">&copy; 2024 Javier Arias Carroza. Todos los derechos reservados.</p>
-    <div class="social-links">
-      <a href="https://github.com/jcarrozadev" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/javier-arias-carroza-0318582b4" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:jariascarroza@gmail.com"><i class="fas fa-envelope"></i></a>
+    <section id="formacion" class="section education-section education-alt">
+        <div class="container">
+            <div class="section-heading" data-aos="fade-up">
+                <span>Formación</span>
+                <h2>Mi recorrido académico.</h2>
+            </div>
+
+            <div class="timeline">
+
+                <article class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card featured-timeline">
+                        <span class="timeline-date">
+                            sept. 2023 — jun. 2025
+                        </span>
+
+                        <div class="timeline-meta">
+                            <span class="timeline-grade">
+                                Nota media: 9
+                            </span>
+                        </div>
+
+                        <h3>Desarrollo de Aplicaciones Web</h3>
+                        <h4>Escuela Virgen de Guadalupe</h4>
+
+                        <p>
+                            Formación especializada en desarrollo web fullstack,
+                            programación, bases de datos, interfaces, entorno cliente,
+                            entorno servidor y despliegue de aplicaciones.
+                        </p>
+
+                        <div class="timeline-tags">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                            <span>HTML5</span>
+                            <span>XML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+                        <span class="timeline-date">
+                            sept. 2021 — jun. 2023
+                        </span>
+
+                        <div class="timeline-meta">
+                            <span class="timeline-grade">
+                                Nota media: 9
+                            </span>
+                        </div>
+
+                        <h3>Sistemas Microinformáticos y Redes</h3>
+                        <h4>Escuela Virgen de Guadalupe</h4>
+
+                        <p>
+                            Formación técnica en sistemas operativos, redes,
+                            seguridad informática, servicios en red e infraestructura.
+                        </p>
+
+                        <div class="timeline-tags">
+                            <span>Redes</span>
+                            <span>Sistemas</span>
+                            <span>Ofimática</span>
+                            <span>Seguridad</span>
+                            <span>Hardware</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item mini-timeline" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+                        <span class="timeline-date">
+                            sept. 2016 — jun. 2022
+                        </span>
+
+                        <h3>Educación Secundaria Obligatoria (ESO)</h3>
+                        <h4>IES María Josefa Baraínca</h4>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="section section-soft">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span>Stack técnico</span>
+          <h2>Tecnologías con las que trabajo.</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card" data-aos="zoom-in">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, Bootstrap, diseño responsive e interfaces limpias.</p>
+          </article>
+
+          <article class="stack-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend</h3>
+            <p>PHP, Laravel, controladores, rutas, validaciones, formularios y lógica de negocio.</p>
+          </article>
+
+          <article class="stack-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fa-solid fa-database"></i>
+            <h3>Base de datos</h3>
+            <p>MySQL, relaciones, consultas, modelos, migraciones y estructura de datos.</p>
+          </article>
+
+          <article class="stack-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fa-brands fa-github"></i>
+            <h3>Herramientas</h3>
+            <p>Git, GitHub, documentación, organización de proyectos y despliegue básico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span>Proyectos</span>
+          <h2>Aplicaciones y trabajos destacados.</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="project-pinned">
+                  <i class="fa-solid fa-thumbtack"></i>
+                  Destacado
+              </div>
+
+              <img src="./assets/img/proyects/aliados_weazel.jpg" alt="Aliados Weazel">
+
+              <div class="project-content">
+                  <span class="project-badge">Sistema multimedia</span>
+
+                  <h3>Aliados Weazel</h3>
+
+                  <p>
+                      Plataforma multimedia interactiva en tiempo real orientada a entornos multiplayer,
+                      con sistema de noticias, reportajes, emisiones en directo, biblioteca multimedia,
+                      gestión económica y arquitectura modular cliente-servidor.
+                  </p>
+
+                  <div class="project-tech">
+                      <span>Lua</span>
+                      <span>JavaScript</span>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>React</span>
+                      <span>MySQL</span>
+                  </div>
+
+                  <a href="https://github.com/jcarrozadev/aliados_weazel"
+                    target="_blank"
+                    class="project-link">
+
+                      Ver en GitHub
+                      <i class="fa-brands fa-github"></i>
+                  </a>
+              </div>
+          </article>
+
+          <article class="project-card featured" data-aos="fade-up">
+
+            <div class="project-pinned">
+                <i class="fa-solid fa-thumbtack"></i>
+                Destacado
+            </div>
+
+            <img src="./assets/img/proyects/guardsevg.jpg" alt="Gestor de Guardias">
+
+            <div class="project-content">
+              <span class="project-badge">Proyecto destacado</span>
+              <h3>Gestor de Guardias</h3>
+              <p>
+                Aplicación web para la gestión de guardias en un centro educativo, con panel de administración,
+                profesorado, asignaciones y control visual de disponibilidad.
+              </p>
+
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a href="https://github.com/jcarrozadev/tfc_evg" target="_blank" class="project-link">
+                Ver en GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up">
+
+              <img src="./assets/img/proyects/aliados_items.png"
+                  alt="Aliados Items">
+
+              <div class="project-content">
+
+                  <span class="project-badge">
+                      Herramienta administrativa
+                  </span>
+
+                  <h3>Aliados Items</h3>
+
+                  <p>
+                      Sistema interactivo de catálogo y gestión de ítems para entornos
+                      multiplayer, con búsqueda avanzada, filtrado dinámico,
+                      categorización, ordenación y una interfaz premium optimizada
+                      para administración en tiempo real.
+                  </p>
+
+                  <div class="project-tech">
+                      <span>Lua</span>
+                      <span>JavaScript</span>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>UI/UX</span>
+                  </div>
+
+                  <a href="https://github.com/jcarrozadev/aliados_items"
+                    class="project-link"
+                    target="_blank">
+
+                      Ver en GitHub
+                      <i class="fa-brands fa-github"></i>
+                  </a>
+
+              </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up">
+            <img src="./assets/img/proyects/concesionario.png" alt="Concesionario de coches">
+
+            <div class="project-content">
+              <h3>Concesionario de Coches</h3>
+              <p>Proyecto realizado durante formación DUAL, centrado en gestión de vehículos y estructura CRUD.</p>
+
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+
+              <a href="https://github.com/jcarrozadev/concesionarioCoches" target="_blank" class="project-link">
+                Ver en GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up">
+            <img src="./assets/img/proyects/taskManager.png" alt="Gestor de tareas">
+
+            <div class="project-content">
+              <h3>Gestor de Tareas</h3>
+              <p>Aplicación interna para organización de tareas, seguimiento de trabajo y gestión de estados.</p>
+
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a href="#" class="project-link disabled">
+                Proyecto privado <i class="fa-solid fa-lock"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up">
+            <img src="./assets/img/proyects/decisionesdevida.png" alt="Decisiones de Vida">
+
+            <div class="project-content">
+              <h3>Decisiones de Vida</h3>
+              <p>Minijuego educativo basado en decisiones, justicia social y consecuencias narrativas.</p>
+
+              <div class="project-tech">
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+              </div>
+
+              <a href="https://github.com/jcarrozadev/decisionesdevida" target="_blank" class="project-link">
+                Ver en GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up">
+            <img src="./assets/img/proyects/webAppLibros.png" alt="Gestión de Libros">
+
+            <div class="project-content">
+              <h3>Gestión de Libros</h3>
+              <p>Aplicación para gestionar libros y materiales educativos de cursos dentro de un centro.</p>
+
+              <div class="project-tech">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML/CSS</span>
+              </div>
+
+              <a href="https://github.com/jcarrozadev/webLibrosApp" target="_blank" class="project-link">
+                Ver en GitHub <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container">
+        <div class="contact-box" data-aos="zoom-in">
+          <span>Contacto</span>
+
+          <h2>Disponible para nuevas oportunidades.</h2>
+
+          <p>
+            Busco una oportunidad como desarrollador web junior donde pueda aportar, seguir aprendiendo
+            y trabajar en proyectos reales con impacto.
+          </p>
+
+          <div class="contact-actions">
+            <a href="mailto:jariascarroza@gmail.com" class="btn-main">
+              Contactar por email
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/jcarrozadev" target="_blank" class="btn-ghost">
+              GitHub
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/javier-arias-carroza-0318582b4" target="_blank" class="btn-ghost">
+              LinkedIn
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Javier Arias Carroza.</p>
+
+    <div>
+      <a href="https://github.com/jcarrozadev" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/javier-arias-carroza-0318582b4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:jariascarroza@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </footer>
 
-  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
   <script>
     AOS.init({
-      duration: 1000,
+      duration: 800,
       once: true,
+      offset: 80
     });
   </script>
-  <script src="assets/js/texto.js"></script>
 </body>
 </html>

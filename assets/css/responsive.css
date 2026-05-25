@@ -1,0 +1,377 @@
+/* ==============================
+   RESPONSIVE - PORTFOLIO JAVIER
+============================== */
+
+@media (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    position: relative;
+    width: 100%;
+  }
+
+  .header-wrapper {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 1rem 1.1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .brand {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .nav-menu a {
+    width: 100%;
+    padding: 0.78rem 0.5rem;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 0.82rem;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid var(--border);
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 2.2rem 0 4rem;
+  }
+
+  .hero-section .container,
+  .section .container {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  .hero-grid {
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    font-size: 0.74rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .hero-content h1 {
+    width: 100%;
+    font-size: 2.45rem;
+    line-height: 1;
+    letter-spacing: -0.07em;
+  }
+
+  .hero-content h1 span {
+    margin-top: 0.7rem;
+    font-size: 1.35rem;
+    line-height: 1.1;
+    letter-spacing: -0.06em;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    margin-top: 1.4rem;
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
+  .hero-tags {
+    width: 100%;
+    margin-top: 1.5rem;
+    gap: 0.55rem;
+  }
+
+  .hero-tags span,
+  .project-tech span {
+    font-size: 0.72rem;
+    padding: 0.42rem 0.65rem;
+  }
+
+  .hero-actions,
+  .contact-actions {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1.8rem;
+  }
+
+  .btn-main,
+  .btn-ghost {
+    width: 100%;
+    min-height: 50px;
+  }
+
+  .hero-card {
+    width: 100%;
+    padding: 1.45rem;
+    border-radius: 20px;
+  }
+
+  .profile-img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .hero-card h2 {
+    font-size: 1.35rem;
+    line-height: 1.15;
+  }
+
+  .hero-card p {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .section-heading h2,
+  .contact-box h2 {
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.06em;
+  }
+
+  .about-text {
+    font-size: 0.96rem;
+  }
+
+  .about-panel,
+  .stack-card,
+  .project-content {
+    padding: 1.3rem;
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .contact-box {
+    padding: 1.6rem 1.2rem;
+    border-radius: 22px;
+  }
+
+  .hero-stats {
+      flex-direction: column;
+  }
+
+  .stat-item {
+      min-width: 100%;
+  }
+
+  .daily-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  .daily-card {
+      width: 100%;
+      padding: 1.4rem;
+      border-radius: 22px;
+  }
+
+  .daily-icon {
+      width: 52px;
+      height: 52px;
+      margin-bottom: 1rem;
+      border-radius: 16px;
+      font-size: 1.1rem;
+  }
+
+  .daily-card h3 {
+      font-size: 1.1rem;
+      line-height: 1.2;
+      margin-bottom: .8rem;
+  }
+
+  .daily-card p {
+      font-size: .94rem;
+      line-height: 1.75;
+  }
+
+  .daily-tags {
+      gap: .5rem;
+  }
+
+  .daily-tags span {
+      font-size: .74rem;
+      padding: .42rem .65rem;
+  }
+
+  #daily-work .section-heading {
+      margin-bottom: 1.8rem;
+  }
+
+  #daily-work .section-heading h2 {
+      font-size: clamp(1.9rem, 8vw, 2.5rem);
+      line-height: 1.08;
+  }
+
+  #daily-work .container {
+      width: 100%;
+      max-width: 390px;
+      margin: 0 auto;
+  }
+
+  .daily-card {
+      text-align: left;
+  }
+
+  .signature-section {
+      padding: 75px 0;
+  }
+
+  .signature-box {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+  }
+
+  .signature-left h2 {
+      font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+
+  .signature-right {
+      margin-top: .5rem;
+  }
+
+  .signature-card {
+      padding: 1.25rem;
+  }
+
+  .timeline {
+      gap: 1.4rem;
+  }
+
+  .timeline::before {
+      left: 10px;
+  }
+
+  .timeline-item {
+      grid-template-columns: 28px 1fr;
+      gap: 1rem;
+  }
+
+  .timeline-dot {
+      width: 22px;
+      height: 22px;
+  }
+
+  .timeline-card {
+      padding: 1.3rem;
+      border-radius: 20px;
+  }
+
+  .timeline-item:hover .timeline-card {
+      transform: translateX(0);
+  }
+
+  .timeline-card h3 {
+      font-size: 1.12rem;
+  }
+
+  .timeline-card h4 {
+      font-size: .9rem;
+  }
+
+  .timeline-card p {
+      font-size: .92rem;
+  }
+
+  .timeline-tags span {
+      font-size: .72rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .header-wrapper,
+  .hero-section .container,
+  .section .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-content h1 {
+      font-size: clamp(3rem, 14vw, 4.2rem);
+      line-height: .92;
+      letter-spacing: -0.08em;
+  }
+
+  .hero-content h1 span {
+      margin-top: .4rem;
+      padding-left: .8rem;
+
+      font-size: 1.12rem;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+  }
+
+  #daily-work .container {
+      max-width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+  .daily-card {
+      padding: 1.25rem;
+  }
+
+  .daily-card h3 {
+      font-size: 1rem;
+  }
+
+  .daily-card p {
+      font-size: .9rem;
+  }
+
+  .daily-tags span {
+      font-size: .7rem;
+  }
+}
