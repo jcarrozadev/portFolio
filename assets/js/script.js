@@ -65,4 +65,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
         startAutoplay();
     });
+
+    const openBtn = document.querySelector(".menu-toggle");
+    const closeBtn = document.querySelector(".close-menu");
+    const overlay = document.querySelector(".mobile-overlay");
+    const mobileLinks = document.querySelectorAll(".mobile-menu a");
+
+    const openMenu = () => {
+        document.body.classList.add("menu-open");
+    };
+
+    const closeMenu = () => {
+        document.body.classList.remove("menu-open");
+    };
+
+    openBtn?.addEventListener("click", openMenu);
+    closeBtn?.addEventListener("click", closeMenu);
+    overlay?.addEventListener("click", closeMenu);
+
+    mobileLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+    });
 });

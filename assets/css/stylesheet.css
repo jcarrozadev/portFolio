@@ -1470,6 +1470,30 @@ img {
     transform: translateY(-50%) translateX(2px);
 }
 
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.045);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.menu-toggle:hover {
+  color: var(--accent);
+  border-color: rgba(56,189,248,.35);
+  background: rgba(56,189,248,.08);
+}
+
+.mobile-overlay,
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
     .project-carousel {
         height: 190px;
